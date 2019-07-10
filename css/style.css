@@ -27,7 +27,7 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 27% 25% 25% 23%;
     grid-template-areas:
     "users hydration sleep activity";
     height: 100vh;
