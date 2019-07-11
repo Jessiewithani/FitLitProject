@@ -174,7 +174,7 @@ header {
   background-color: black;
   display: block;
   width: 320px;
-  height: 340px;
+  height: 335px;
   padding: 1em;
   overflow-x: auto;
   text-align: center;
@@ -187,7 +187,7 @@ header {
   background-color: black;
   display: block;
   width: 320px;
-  height: 420px;
+  height: 345px;
   padding: 1em;
   overflow-x: auto;
   text-align: center;
@@ -205,8 +205,8 @@ header {
   overflow-x: auto;
   text-align: center;
   opacity: 0.6;
-  margin-top:20px;
-  padding-top:20px;
+  margin-top: 20px;
+  padding-top: 20px;
   margin-left: 20px;
 }
 
@@ -214,7 +214,7 @@ header {
   background-color: black;
   display: block;
   width: 320px;
-  height: 426px;
+  height: 350px;
   padding: 1em;
   overflow-x: auto;
   text-align: center;
