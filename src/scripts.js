@@ -12,7 +12,7 @@ $(document).ready(function() {
   const today = "2019/07/10"
 
 
-  var cardOne= document.querySelector('.card-1');
+  var cardOne = document.querySelector('.card-1');
   cardOne.addEventListener( 'click', function() {
     cardOne.classList.toggle('is-flipped');
   });
