@@ -88,13 +88,13 @@ class Sleep {
 
   userFewestHoursSlept(id) {
     let findUserInstances = this.sleepData.filter(user => id === user.userID)
-    let sortedHours = findUserInstances.sort((a,b) => a.hoursSlept - b.hoursSlept)
+    let sortedHours = findUserInstances.sort((a, b) => a.hoursSlept - b.hoursSlept)
     return sortedHours[0].hoursSlept
   }
 
   userMostHoursSlept(id) {
     let findUserInstances = this.sleepData.filter(user => id === user.userID)
-    let sortedHours = findUserInstances.sort((a,b) => b.hoursSlept - a.hoursSlept)
+    let sortedHours = findUserInstances.sort((a, b) => b.hoursSlept - a.hoursSlept)
     return sortedHours[0].hoursSlept
   }
 
