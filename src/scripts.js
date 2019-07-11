@@ -9,7 +9,7 @@ $(document).ready(function() {
   const year = new Date().getFullYear()
   const month = new Date().getMonth() + 1
   const day = new Date().getDate()
-  const today = "2019/07/10"
+  const today = "2019/07/11"
 
 
   var cardOne= document.querySelector('.card-1');
