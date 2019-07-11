@@ -16,7 +16,7 @@ class Sleep {
     let avgSleepQuality = grabUserID.reduce((acc, item) => {
       return acc += item.sleepQuality
     }, 0);
-    return avgSleepQuality / grabUserID.length;
+    return parseFloat((avgSleepQuality / grabUserID.length).toFixed(2));
   }
 
   hrsSleepForSpecificDay(id, date) {
@@ -97,12 +97,6 @@ class Sleep {
     let sortedHours = findUserInstances.sort((a, b) => b.hoursSlept - a.hoursSlept)
     return sortedHours[0].hoursSlept
   }
-
-  // leastHourSlept() {  
-  //   let x = this.sleepData.reduce((minAcc, day) => day.hoursSlept < minAcc ? day.hoursSlept : minAcc, this.sleepData[0].hoursSlept);
-  //   console.log(x)
-  // }
-
 }
 
 if (typeof module !== 'undefined') {

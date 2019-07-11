@@ -394,27 +394,20 @@ $(document).ready(function() {
     options: {
       legend: {display: false},
       labels: {
-        fontColor: "black",
-        fontSize: 20
       },
       title: {
         display: true,
-        fontColor: 'black',
         text: 'Your Latest VS Avg Hours Slept'
       },
       scales: {
         yAxes: [{
           ticks: {
             beginAtZero: true,
-            fontColor: 'black',
-            fontSize: 16
           }
         }],
         xAxes: [{
           ticks: {
             beginAtZero: true,
-            fontColor: 'black',
-            fontSize: 16
           }
         }],
       }
@@ -442,27 +435,20 @@ $(document).ready(function() {
     options: {
       legend: {display: false},
       labels: {
-        fontColor: "black",
-        fontSize: 20
       },
       title: {
         display: true,
-        fontColor: 'black',
         text: 'Your Latest VS Avg Sleep Quality (SQ)'
       },
       scales: {
         yAxes: [{
           ticks: {
             beginAtZero: true,
-            fontColor: 'black',
-            fontSize: 16
           }
         }],
         xAxes: [{
           ticks: {
             beginAtZero: true,
-            fontColor: 'black',
-            fontSize: 16
           }
         }],
       }
