@@ -38,23 +38,23 @@ describe('Sleep', function() {
   it('should return how many hours user slept each day over the course of a given week', function() {
     let sleep = new Sleep(sampleSleep);
     expect(sleep.userHrsSleepPerWeek(10, '2019/06/21')).to.deep.eql({ '2019/06/15': 4.4,
-    '2019/06/16': 8,
-    '2019/06/17': 4.3,
-    '2019/06/18': 7,
-    '2019/06/19': 5.3,
-    '2019/06/20': 5.5,
-    '2019/06/21': 4.5 });
+      '2019/06/16': 8,
+      '2019/06/17': 4.3,
+      '2019/06/18': 7,
+      '2019/06/19': 5.3,
+      '2019/06/20': 5.5,
+      '2019/06/21': 4.5 });
   })
 
   it('should return the user sleep quality each day over the course of a given week ', function() {
     let sleep = new Sleep(sampleSleep);
     expect(sleep.userSleepQualityPerWeek(10, '2019/06/21')).to.deep.eql({'2019/06/15': 1.6,
-    '2019/06/16': 4.4,
-    '2019/06/17': 3.6,
-    '2019/06/18': 3.8,
-    '2019/06/19': 3.1,
-    '2019/06/20': 1.1,
-    '2019/06/21': 2.5 }
+      '2019/06/16': 4.4,
+      '2019/06/17': 3.6,
+      '2019/06/18': 3.8,
+      '2019/06/19': 3.1,
+      '2019/06/20': 1.1,
+      '2019/06/21': 2.5 }
     );
   })
 

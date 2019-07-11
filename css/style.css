@@ -1,63 +1,66 @@
 * {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #243b6b;
 }
 
 header {
-    border-bottom: 2px ;
-    height: 140px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(103,128,159,1);
+  border-bottom: 2px ;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(103,128,159,1);
 }
 #winner-icon {
-    width: 8%;
-    margin-left: 25px;
-    margin-right: 50px;
+  width: 8%;
+  margin-left: 25px;
+  margin-right: 50px;
 }
 
 .user-name,
 .exclamation-point{
-    color:#60D4C8;
+  color:#60D4C8;
 }
 .circle-box{
-    border-radius: 50%;
-    height: 40px;
-    margin: 30px auto;
-    height: 26px;
-    width: 26px;
-    background: #60D4C8;
-    transition: 300ms;
-    margin-right: 12px;
+  border-radius: 50%;
+  height: 40px;
+  margin: 30px auto;
+  height: 26px;
+  width: 26px;
+  background: #60D4C8;
+  transition: 300ms;
+  margin-right: 12px;
 }
 
 
 #user-icon {
-    width:55%;
-    margin-top: 15em;
-
+  width:55%;
+  margin-top: 15em;
 }
 
 #hydration-icon {
-    margin-top:15em;
-    width: 30%;
+  margin-top: 15em;
+  width: 30%;
 }
 
 #activity-icon {
-    margin-top:12em;
-    width: 70%;
+  margin-top: 14em;
+  width: 70%;
 }
 
 #sleep-icon {
-    margin-top:12em;
-    width:70%;
+  margin-top: 14em;
+  width:70%;
 }
 
 
 .greet-user {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .page-heading {
@@ -141,7 +144,7 @@ header {
     background: #5476c7;
     transform: rotateY(180deg);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
@@ -153,37 +156,44 @@ header {
     flex-direction: column;
 }
 
+#daily-water {
+  margin-bottom: 65px;
+}
+
 .card-back-3 {
   display: block;
   background: #5f54c7;
   transform: rotateY( 180deg );
-  display:block;
-  margin:0;
+  display: block;
+  margin: 0;
+  padding: 6px;
+  padding-top: 15px;
 }
 
 .scroll-box-1 { 
   background-color: black;
   display: block;
   width: 320px;
-  height: 320px;
+  height: 340px;
   padding: 1em;
   overflow-x: auto;
   text-align: center;
   opacity:0.6;
-  margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 14px;
 } 
 
 .scroll-box-2 { 
   background-color: black;
   display: block;
   width: 320px;
-  height: 320px;
+  height: 420px;
   padding: 1em;
   overflow-x: auto;
   text-align: center;
   opacity: 0.6;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 14px;
 } 
 
 .scroll-box-3 {
@@ -194,7 +204,9 @@ header {
   padding: 1em;
   overflow-x: auto;
   text-align: center;
-  opacity:0.6;
+  opacity: 0.6;
+  margin-top:20px;
+  padding-top:20px;
   margin-left: 20px;
 }
 
@@ -202,19 +214,20 @@ header {
   background-color: black;
   display: block;
   width: 320px;
-  height: 320px;
+  height: 426px;
   padding: 1em;
   overflow-x: auto;
   text-align: center;
   opacity: 0.6;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 20px;
 }
 
 .card-back-4 {
   display: block;
   background: #7e54c7;
-  transform: rotateY( 180deg )
+  transform: rotateY( 180deg );
+  padding-top: 5px;
 }
 
 .card-1.is-flipped,
@@ -230,4 +243,4 @@ h2 {
     font-size: 2em;
     margin-top: 15px;
     color:black;
-}*/
+}

@@ -9,7 +9,7 @@ $(document).ready(function() {
   const year = new Date().getFullYear()
   const month = new Date().getMonth() + 1
   const day = new Date().getDate()
-  const today = "2019/07/10"
+  const today = "2019/07/11"
 
 
   var cardOne= document.querySelector('.card-1');
@@ -69,7 +69,7 @@ $(document).ready(function() {
       legend: {display: false},
       labels: {
         fontColor: "black",
-        fontSize: 20
+        fontSize: 15
       },
       title: {
         display: true,
@@ -81,14 +81,14 @@ $(document).ready(function() {
           ticks: {
             beginAtZero: true,
             fontColor: 'black',
-            fontSize: 16
+            fontSize: 14
           }
         }],
         xAxes: [{
           ticks: {
             beginAtZero: true,
             fontColor: 'black',
-            fontSize: 16
+            fontSize: 14
           }
         }],
       }
@@ -113,16 +113,30 @@ $(document).ready(function() {
     },
     options: {
       legend: {display: false},
+      labels: {
+        fontColor: 'black',
+        fontSize: 15
+      },
       title: {
         display: true,
+        fontColor: 'black',
         text: 'Weekly Water Intake (fl oz)'
       },
       scales: {
         yAxes: [{
           ticks: {
-            beginAtZero: true
+            beginAtZero: true,
+            fontColor: 'black',
+            fontSize: 14
           }
-        }]
+        }],
+        xAxes: [{
+          ticks: {
+            beginAtZero: true,
+            fontColor: 'black',
+            fontSize: 14
+          }
+        }],
       }
     }
   });
@@ -394,27 +408,20 @@ $(document).ready(function() {
     options: {
       legend: {display: false},
       labels: {
-        fontColor: "black",
-        fontSize: 20
       },
       title: {
         display: true,
-        fontColor: 'black',
         text: 'Your Latest VS Avg Hours Slept'
       },
       scales: {
         yAxes: [{
           ticks: {
             beginAtZero: true,
-            fontColor: 'black',
-            fontSize: 16
           }
         }],
         xAxes: [{
           ticks: {
             beginAtZero: true,
-            fontColor: 'black',
-            fontSize: 16
           }
         }],
       }
@@ -442,27 +449,20 @@ $(document).ready(function() {
     options: {
       legend: {display: false},
       labels: {
-        fontColor: "black",
-        fontSize: 20
       },
       title: {
         display: true,
-        fontColor: 'black',
         text: 'Your Latest VS Avg Sleep Quality (SQ)'
       },
       scales: {
         yAxes: [{
           ticks: {
             beginAtZero: true,
-            fontColor: 'black',
-            fontSize: 16
           }
         }],
         xAxes: [{
           ticks: {
             beginAtZero: true,
-            fontColor: 'black',
-            fontSize: 16
           }
         }],
       }

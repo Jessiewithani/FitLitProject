@@ -11,18 +11,16 @@
   <body>
     <header class="navbar">
       <div class="img-greeting">
-      <img id="winner-icon" src="../css/winner.svg" alt="vector of stick figure standing in first place"/>
-      <article id="user-info">
-        <p class="greet-user">Welcome back, <span class="user-name"></span>!</p>
-        <br />
-        <p id="user-address"></p>
-        <p id="user-email"></p>
-      </article>
-    </div>
-    <div class="circle-box"></div>
+        <img id="winner-icon" src="../css/winner.svg" alt="vector of stick figure standing in first place"/>
+        <article id="user-info">
+          <p class="greet-user">Welcome back, <span class="user-name"></span>!</p>
+          <br />
+          <p id="user-address"></p>
+          <p id="user-email"></p>
+        </article>
+      </div>
       <h1 class="page-heading">FitLit</h1>
     </header>
-
     <main>
       <div class="whole-cards-container">
         <section class="container-1">
@@ -40,7 +38,8 @@
               <p id="latest-user-miles-walked"></p>
               <p id="user-stepGoal"></p>
               <p id="avg-stepGoal"></p>
-              <canvas id="user-vs-avg-steps" width="300" height="300"></canvas></article>
+              <canvas id="user-vs-avg-steps" width="300" height="300"></canvas>
+            </article>
           </div>
         </section>
 
@@ -48,13 +47,13 @@
           <div class="card-2">
             <article class="hydration-section card-face card-front-2">
               <h2>Hydration</h2>
-            <img id="hydration-icon" src="../css/h2o.png" alt="picture of a water drop"/>
+              <img id="hydration-icon" src="../css/h2o.png" alt="picture of a water drop"/>
             </article>
             <article class="card-face card-back-2">
-               <article class="hydration-information">
+              <article class="hydration-information">
                 <p id="daily-water"></p>
                 <canvas id="weekly-water-intake" width="300" height="300"></canvas>
-            </article>
+              </article>
             </article>
           </div>
         </section>
@@ -68,14 +67,14 @@
             <article class="card-face card-back-3">
               <p id="latest-user-minActive"></p>
               <div class="scroll-box-1">
-              <canvas id="user-vs-avg-steps-day" width="300" height="300"></canvas>
-              <canvas id="user-vs-avg-stairs" width="300" height="300"></canvas>
-              <canvas id="user-vs-avg-activeMin" width="300" height="300"></canvas>
+                <canvas id="user-vs-avg-steps-day" width="300" height="300"></canvas>
+                <canvas id="user-vs-avg-stairs" width="300" height="300"></canvas>
+                <canvas id="user-vs-avg-activeMin" width="300" height="300"></canvas>
               </div>
               <div class="scroll-box-2">
-              <canvas id="weekly-user-steps" width="300" height="300"></canvas>
-              <canvas id="weekly-stairs-climbed" width="300" height="300"></canvas>
-              <canvas id="weekly-minutes-active" width="300" height="300"></canvas>
+                <canvas id="weekly-user-steps" width="300" height="300"></canvas>
+                <canvas id="weekly-stairs-climbed" width="300" height="300"></canvas>
+                <canvas id="weekly-minutes-active" width="300" height="300"></canvas>
               </div>
             </article>
           </div>
@@ -88,21 +87,21 @@
               <img id="sleep-icon" src="../css/alarm.svg" alt="picture of alarm"/>
             </article>
             <article class="card-face card-back-4">
-                <p id="user-most-sleep"></p>
-                <p id="user-least-sleep"></p>
-                <div class="scroll-box-3">
-                  <canvas id="user-vs-avg-sleep-hours" width="300" height="300"></canvas>
-                  <canvas id="user-vs-avg-sleep-quality" width="300" height="300"></canvas>
-                </div>
-                <div class="scroll-box-4">
-                  <canvas id="weekly-hours-sleep" width="300" height="300"></canvas>
-                  <canvas id="weekly-sleep-quality" width="300" height="300"></canvas>
-                </div>
+              <p id="user-most-sleep"></p>
+              <p id="user-least-sleep"></p>
+              <div class="scroll-box-3">
+                <canvas id="user-vs-avg-sleep-hours" width="300" height="300"></canvas>
+                <canvas id="user-vs-avg-sleep-quality" width="300" height="300"></canvas>
+              </div>
+              <div class="scroll-box-4">
+                <canvas id="weekly-hours-sleep" width="300" height="300"></canvas>
+                <canvas id="weekly-sleep-quality" width="300" height="300"></canvas>
+              </div>
             </article>
           </div>
         </section>
-    </div>
-  </main>
+      </div>
+    </main>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./scripts.js"></script>
     <script type="text/javascript" src="../data/users.js"></script>
