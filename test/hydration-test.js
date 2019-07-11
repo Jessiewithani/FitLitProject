@@ -10,23 +10,24 @@ describe('Hydration', function() {
     expect(Hydration).to.be.a('function');
   })
     
+  let hydro;
+  beforeEach(function() {
+    hydro = new Hydration(hydrationData);
+  });
+
   it('should be an instance of Hydration', function() {
-    let hydro = new Hydration(hydrationData);
     expect(hydro).to.be.an.instanceof(Hydration);
   })
 
   it('should return the average ounces consumed by a user', function() {
-    let hydro = new Hydration(hydrationData);
     expect(hydro.averageTotalFluidOzPerUser(7)).to.equal(6.42);
   })
 
   it('should return the ozs of specified date by a user', function() {
-    let hydro = new Hydration(hydrationData);
     expect(hydro.fluidOzsPerDay(4, "2019/06/19")).to.equal(21);
   })
 
   it('should return the ozs of specified week by a user', function() {
-    let hydro = new Hydration(hydrationData);
     expect(hydro.userFluidsPerWeek(7, "2019/06/22")).to.deep.eql({'2019/06/16': 49, 
       '2019/06/17': 50,
       '2019/06/18': 58,

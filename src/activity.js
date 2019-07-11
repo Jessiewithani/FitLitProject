@@ -12,7 +12,7 @@ class Activity {
   }
 
   userMinActivePerDay(id, date) {
-    return this.activityData.find(user => id === user.userID && date === user.date).minutesActive
+    return this.activityData.find(user => id === user.userID && date === user.date).minutesActive;
   }
 
   userMilesWalkedPerDay(id, date, userData) {
