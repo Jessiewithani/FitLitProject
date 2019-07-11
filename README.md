@@ -1,82 +1,34 @@
-# FitLit Starter Kit
+# Fit Lit
 
-The details of this project are outline in [this project spec](http://frontend.turing.io/projects/fitlit.html).
+********************
 
-## Setup
+### Description
 
-1. Within your group, decide on one person to have the project repository (repo) on their GitHub account. Then, that person should fork this repo - on the top right corner of this page, click the **Fork** button.
-1. Both memebers of the group should clone down the _forked_ repo. Since you don't want to name your project "activity-tracker-starter", you can use an optional argument when you run git clone (you replace the [...] with the terminal command arguments): `git clone [remote-address] [what you want to name the repo]`
-1. Once you have cloned the repo, change into the directory and install the project dependencies. Run `npm install` to install project dependencies.
-1. Run `open src/index.html` in the terminal to see the HTML page (you should see some boilerplate HTML displayed on the page)
-1. Make sure both members of your team are collaborators on the forked repo.
+Users are able to view their fitness reports that record their hydration, sleep, and productivity levels. This app also includes charts that show the user's information and also compares their results with fellow Fit Lit members.
 
-## Testing
+On reload, a user is randomly generated on the screen attached with their given fitness profolio. In the front, the icons from left to right represent: the user, their hydration, their productivity, and their sleep routine. Each category, is presented on a card, that is also clickable. When clicked, the cards flip to the backside, and the user's stats and charts are shown.
 
-There is no boilerplate for testing in this starter-kit repo. You will need to set this up yourself. However, if you ran `npm install`, then the tooling you need to start testing is already installed (`mocha` and `chai`).
+### Languages Used
 
-## Linting Your Code
+- CSS
+- HTML
+- JavaScript
+- jQuery
 
-Run the command in your terminal `npm run lint` to run the linter on your JavaScript code. There will be errors and warnings right from the start in this starter kit, but that's ok - the linter is still running successfully.
+### Screenshots
 
-Your linter will look only at the JavaScript files you have within the `src` and the `test` directories.
+**fullscreen with header included**
 
-## Data Model
+<img width="1440" alt="Screen Shot 2019-07-11 at 12 31 51 AM" src="https://user-images.githubusercontent.com/42981739/61029258-e0d4f800-a377-11e9-93c9-6ff43d8f0661.png">
 
-**Users**
+**fullscreen without header**
 
-```
-[
-  {
-    "id": [number],
-    "name": [string],
-    "address": [string],
-    "email": [string],
-    "strideLength": [number - feet],
-    "dailyStepGoal": [number - steps],
-    "friends": [array - one-way connection to other user(s)]
-  },
-  ...more user data
-]
-```
+<img width="1440" alt="Screen Shot 2019-07-11 at 12 32 20 AM" src="https://user-images.githubusercontent.com/42981739/61029364-1bd72b80-a378-11e9-8844-fd294339b4c0.png">
 
-**Activity**
+**backside view**
 
-```
-[
-  {
-    "userID": [number],
-    "date": [string YYYY/MM/DD],
-    "numSteps": [number - steps],
-    "minutesActive": [number - minutes],
-    "flightsOfStairs": [number - flights]
-  },
-  ...more activity data
-]
-```
+<img width="1440" alt="Screen Shot 2019-07-11 at 8 56 23 AM" src="https://user-images.githubusercontent.com/42981739/61061743-10a4ef80-a3ba-11e9-89d3-180569419c93.png">
 
-**Hydration**
+**backside with flipped cards**
 
-```
-[
-  {
-    "userID": [number],
-    "date": [string YYYY/MM/DD],
-    "numOunces": [number - ounces]
-  },
-  ...more hydration data
-]
-```
-
-**Sleep**
-
-```
-[
-  {
-    "userID": [number],
-    "date": [string YYYY/MM/DD],
-    "hoursSlept": [number - hours],
-    "sleepQuality": [number - unitless]
-  },
-  ...more sleep data
-]
-```
+<img width="1440" alt="Screen Shot 2019-07-11 at 12 50 57 AM" src="https://user-images.githubusercontent.com/42981739/61029456-4de88d80-a378-11e9-8b34-8eec770ef867.png">
