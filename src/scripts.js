@@ -113,16 +113,30 @@ $(document).ready(function() {
     },
     options: {
       legend: {display: false},
+      labels: {
+        fontColor: 'black',
+        fontSize: 15
+      },
       title: {
         display: true,
+        fontColor: 'black',
         text: 'Weekly Water Intake (fl oz)'
       },
       scales: {
         yAxes: [{
           ticks: {
-            beginAtZero: true
+            beginAtZero: true,
+            fontColor: 'black',
+            fontSize: 14
           }
-        }]
+        }],
+        xAxes: [{
+          ticks: {
+            beginAtZero: true,
+            fontColor: 'black',
+            fontSize: 14
+          }
+        }],
       }
     }
   });
@@ -139,8 +153,8 @@ $(document).ready(function() {
           'rgba(255, 159, 64, 0.2)'
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(255, 159, 64, 1)'
+          '#ef1de7',
+          '#afff14'
         ],
         borderWidth: 1
       }]
@@ -173,8 +187,8 @@ $(document).ready(function() {
           'rgba(255, 159, 64, 0.2)'
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(255, 159, 64, 1)'
+          '#ef1de7',
+          '#afff14'
         ],
         borderWidth: 1
       }]
@@ -207,8 +221,8 @@ $(document).ready(function() {
           'rgba(255, 159, 64, 0.2)'
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(255, 159, 64, 1)'
+          '#ef1de7',
+          '#afff14'
         ],
         borderWidth: 1
       }]
@@ -249,22 +263,10 @@ $(document).ready(function() {
         label: 'fl Oz',
         data: Object.values(activity.userStepsPerWeek(randomIndex, today)),
         backgroundColor: [                
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
-          'rgba(90, 173, 226, 0.2)'      
+          'rgba(255, 99, 132, 0.2)',     
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-          'rgba(90, 173, 226, 1)'
+          '#afff14'
         ],
         borderWidth: 1
       }]
@@ -294,21 +296,9 @@ $(document).ready(function() {
         data: Object.values(activity.userStairsPerWeek(randomIndex, today)),
         backgroundColor: [                
           'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
-          'rgba(90, 173, 226, 0.2)' 
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-          'rgba(90, 173, 226, 1)'
+          '#ef1de7'
         ],
         borderWidth: 1
       }]
@@ -337,22 +327,10 @@ $(document).ready(function() {
         label: 'fl Oz',
         data: Object.values(activity.userMinutesActivePerWeek(randomIndex, today)),
         backgroundColor: [                
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
-          'rgba(90, 173, 226, 0.2)'   
+          'rgba(255, 99, 132, 0.2)',  
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-          'rgba(90, 173, 226, 1)'
+          '#afff14'
         ],
         borderWidth: 1
       }]
@@ -394,7 +372,7 @@ $(document).ready(function() {
     options: {
       legend: {display: false},
       labels: {
-        fontColor: "black",
+        fontColor: 'black',
         fontSize: 20
       },
       title: {
@@ -477,22 +455,10 @@ $(document).ready(function() {
         label: 'Hours Sleep',
         data: Object.values(sleep.userHrsSleepPerWeek(randomIndex, today)),
         backgroundColor: [                
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
-          'rgba(90, 173, 226, 0.2)'   
+          'rgba(255, 99, 132, 0.2)'
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-          'rgba(90, 173, 226, 1)'
+          '#ef1de7'
         ],
         borderWidth: 1
       }]
@@ -521,22 +487,10 @@ $(document).ready(function() {
         label: 'Hours Sleep',
         data: Object.values(sleep.userSleepQualityPerWeek(randomIndex, today)),
         backgroundColor: [                
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
-          'rgba(90, 173, 226, 0.2)'   
+          'rgba(255, 99, 132, 0.2)' 
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-          'rgba(90, 173, 226, 1)'
+          '#afff14'
         ],
         borderWidth: 1
       }]
