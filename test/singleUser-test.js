@@ -12,18 +12,20 @@ describe('User', function() {
     expect(User).to.be.a('function');
   })
 
+  let user;
+  beforeEach(function() {
+    user = new User(randomUser);
+  });
+
   it('should be an instance of User', function() {
-    let user = new User(randomUser);
     expect(user).to.be.an.instanceof(User);
   })
 
   it('should hold properties from sample data file', function() {
-    let user = new User(randomUser);
     expect(user.randomUser.name).to.equal(randomUser.name);
   })
 
   it('should return the first name of the user', function() {
-    let user = new User(randomUser);
     expect(user.returnFirstName()).to.equal(randomUser.name.split(" ")[0]);
   })
 
